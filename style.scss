@@ -1,0 +1,67 @@
+:root {
+  --gb-size: 60vh;
+  --box-size: 10vh;
+}
+
+.container {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.title {
+  background-color: rgba(172, 172, 172, 0.378);
+  box-shadow: .5rem .5rem 0.5rem rgba(80, 79, 79, 0.378);
+  padding: .5rem;
+  border-radius: 4em;
+  text-align: center;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content:space-evenly;
+
+  * {line-height: 2rem};
+  img {height: 7rem};
+  p {font-size: 2.5rem};
+}
+
+.main {
+  display: flex;
+
+  .gBoard {
+    margin: 2rem;
+    border: 0.5rem solid black;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    width: var(--gb-size);
+    height: var(--gb-size);
+  
+    .row {
+      
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-evenly;
+    }
+  
+    .btn {
+      width: var(--box-size);
+      height: var(--box-size);
+      font-size: 3.5rem;
+    }
+  }
+  
+  .players {
+  padding-top: 3rem;
+  }
+}
+
+.winBox {
+  height: 100%;
+  text-align: center;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+}
